@@ -1,0 +1,47 @@
+{
+    "movies": [
+      {
+        "title": "Evil Dead Rise",
+        "year": 2023,
+        "description": "Horror / Mystery / Thriller",
+        "image": "https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2023/03/evil-dead-rise-poster.jpg?ssl=1"
+      },
+      {
+        "title": "Super Mario Bros",
+        "year": 2023,
+        "description": "Kids / Family / Comedy",
+        "image": "https://dx35vtwkllhj9.cloudfront.net/universalstudios/super-mario-bros/images/gallery/image8.jpg"
+      },
+      {
+        "title": "Dungeon & Dragons",
+        "year": 2023,
+        "description": "Fantasy / Adventure",
+        "image": "https://pics.filmaffinity.com/Dungeons_Dragons_Honor_Among_Thieves-501449261-large.jpg"
+      },
+      {
+        "title": "Renfield",
+        "year": 2023,
+        "description": "Horror / Comedy / Thriller",
+        "image": "https://m.media-amazon.com/images/M/MV5BNDIwYjVjMDMtOGYxMy00ZTRiLWE0YzktMjIwYmNhOGE4NGQ4XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        "title": "The Last Kingdom",
+        "year": 2023,
+        "description": "Action / History / Thriller",
+        "image": "https://m.media-amazon.com/images/M/MV5BOTlmNGE0ZGMtMzdkMC00MjQyLWI1ZjgtZTIxODAyNWJlZDFlXkEyXkFqcGdeQXVyNTQ4ODM2NjM@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        "title": "The Pope's Exorcist",
+        "year": 2023,
+        "description": "Horror / Mystery / Thriller",
+        "image": "https://m.media-amazon.com/images/M/MV5BYjA0MGU4MzYtYTYxMy00MjRhLTlmMDYtZTVhZDc1Y2QwNWY2XkEyXkFqcGdeQXVyMjY5ODI4NDk@._V1_FMjpg_UX1000_.jpg"
+      },
+      {
+        "title": "John Wick: Chapter 4",
+        "year": 2023,
+        "description": "Action / Comedy / Thriller",
+        "image": "https://assets-prd.ignimgs.com/2023/02/08/jw4-2025x3000-online-character-1sht-keanu-v187-1675886090936.jpg"
+      }
+    ]
+  }
+  

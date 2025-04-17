@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #070933;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #cccfff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: aqua; /*Change when add more links into the page*/
+}
+
+/*HEADER*/
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.9rem;
+    font-weight: bold;   
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    background-color: #cccfff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+    color: black;
+}
+
+/*DROPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 290px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width: 992px)
+{
+    .navbar .links, .navbar .action-btn{
+        display: none;
+    }
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width: 570px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/*CONTENT*/
+.content{
+    padding: 50px;
+}
+
+  
+/*WELCOME TO SENPAI SAYS*/
+
+.welcomesenpai{
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cccfff;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.hellosenpai{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+@media (max-width:700px){
+    
+    .content{
+        padding: 20px;
+    }
+
+    .welcomesenpai1{
+        opacity: 0;
+        display: none;
+    }
+
+    .welcomesenpai{
+        font-size: 40px;
+    }
+}
+
+/*===============================================MOVIE RECOMMENDATIONS===============================*/
+.movierecommendation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.m_movie_info{
+    background-color:#575cb5;
+    padding: 20px;
+    width: 350px;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 750px;
+    /*overflow: hidden;*/
+}
+
+.m_rat{
+    display: flex;
+    color: #fff;
+    padding: 6px;
+    background-color: #797979;
+    width: 65px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.m_icons{
+    margin-right: 8px;
+    color: #ffca37;
+}
+
+.m_movie_info img{
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.m_movie_img {
+    max-width: 100%;
+    max-height: 420px;
+}
+.movie_info_content{
+    padding-top: 10px;
+}
+
+.rating{
+    padding-top:10px ;
+}
+
+.m_movie_name{
+    font-size: 25px;
+    color: azure;
+}
+
+.m_movie_year{
+    font-size: 17px;
+    padding: 8px;
+    padding-left: 0;
+    color: #fff;
+}
+
+.m_movie_description{
+    color: #fff;
+    overflow: hidden;
+    height: 100px;
+    overflow-y: auto;
+}
+
+/*THIS FOOTER*/
+footer{
+    position:initial;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    height: auto;
+    padding-top: 20px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content .foot-head{
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.socials a i{
+    font-size: 1.9rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+}
+
+.footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+}
+
+
+
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #cbd5f0;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #8da8f1;
+    border-radius: 5px;
+}

@@ -1,0 +1,202 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top{
+    height: 100%;
+    background-color: #070933;
+    justify-content: left;
+}
+
+li{
+    list-style: none;
+}
+
+Link{
+    text-decoration: none;
+}
+
+Link:hover{
+    color: aqua; /*Change when add more links into the page*/
+}
+/*CONTENT*/
+.content1{
+    padding: 30px;
+    padding-top: 40px;
+    justify-content: center ;
+    align-items: center;
+    display: flex;
+}
+
+/*===================================THIS IS FORM==================*/
+
+.container{
+    width: 60%;
+    background-color: #fff7f7;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px rgb(236, 222, 222);
+    border-left: 5px solid grey;
+}
+
+.type-title{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 10px
+}
+
+.container .title{
+    font-size: 45px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content form .user-details{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+}
+
+form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+
+
+.movie-genere{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.new-option{
+    padding-right: 30px;
+}
+
+.new-title{
+    font-size: 25px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+/* Selected radio button styles */
+input[type="radio"]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+}
+
+
+form .category label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+ 
+form .button{
+    height: 45px;
+    margin: 20px;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+ 
+@media(max-width: 584px){
+    .container{
+        width: 90%;
+    }
+
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .category{
+        width: 100%;
+    }
+    
+    .user-details::-webkit-scrollbar{
+        width: 5px;
+    }
+}
+
+@media(max-width: 459px){
+    .container .content .category{
+        flex-direction: column;
+    }
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: grey;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+  }

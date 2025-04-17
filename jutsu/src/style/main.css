@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #cbd5f0;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #8da8f1;
+    border-radius: 5px;
+}
+
+.main1234{
+    background-color: #070933;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fafafb;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: aqua; /*Change when add more links into the page*/
+}
+
+/*HEADER*/
+.n_head{
+    position: relative;
+    padding: 0 2rem;
+    background-color: #070933 ;
+    color: #fff;
+}
+
+.n_navbar{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.n_navbar .n_logo a{
+    font-size: 1.9rem;
+    font-weight: bold;   
+}
+
+.n_navbar .n_links{
+    display: flex;
+    gap: 2rem;
+}
+
+.n_navbar .n_toggle_btn{
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.n_action-btn{
+    background-color: #cccfff;
+    color: #000;
+    padding: 9px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.n_action-btn:hover{
+    scale: 1.05;
+    color: black;
+}
+
+/*DROPDOWN MENU*/
+.n_dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(255,255,255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.n_dropdown_menu.open{
+    height: 290px;
+}
+
+.n_dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.n_dropdown_menu .n_action-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*RESPONSIVE DESIGN*/
+@media(max-width: 992px)
+{
+    .n_navbar .n_links, .n_navbar .n_action-btn{
+        display: none;
+    }
+
+    .n_navbar .n_toggle_btn{
+        display: block;
+    }
+
+    .n_dropdown_menu{
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .n_dropdown_menu {
+      display: none;
+    }
+  }
+
+@media (max-width: 570px){
+    .n_dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/*CONTENT*/
+.content{
+    padding: 50px;
+}
+
+.slider-container {
+    position: relative;
+    width: 1050px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+  
+.slider {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+  
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 30px;
+}
+
+  
+.slider img.active {
+    opacity: 1;
+}
+
+@media (max-width:1270px){
+    .slider-container{
+        display: none;
+    }
+}
+  
+@media (max-width:1470px){
+    .slider{
+        height: 300px;
+    }
+}
+
+@media (max-width:1570px){
+    .slider{
+        height: 400px;
+    }
+}
+
+@media (max-width:1670px)
+{
+    .slider{
+        height: 500px;
+    }
+}
+  
+/*WELCOME TO SENPAI SAYS*/
+.welcomesenpai1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cccfff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+.welcomesenpai{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cccfff;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.hellosenpai{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 33px;
+    margin-bottom: 10px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #cccfff;
+}
+
+@media (max-width:700px){
+    
+    .content{
+        padding: 20px;
+    }
+
+    .welcomesenpai1{
+        opacity: 0;
+        display: none;
+    }
+
+    .welcomesenpai{
+        font-size: 40px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    .hellosenpai{
+        font-size: 1.1rem;
+    }
+
+    .welcomesenpai{
+        font-size: 40px;
+    }
+
+    .welcomesenpai1{
+        font-size: 30px;
+    } 
+}
+
+/*CARDS*/
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.notes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin-right: 2%;
+    height: 250px;
+    background-color: #575cb5;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    transition: .8s ease-in-out;
+    font-size: 30px;
+    overflow: hidden;
+    overflow-y: auto;
+    color: #fff;
+}
+  
+
+.notes.clicked{
+    position: absolute;
+    transition:1s ease-in-out;
+    background: #575cb5;
+    transform : scale(1.5);
+    width: 30%;
+    margin-right: 2%;
+    height: 300px;
+    background-color: #575cb5;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    transition: .8s ease-in-out;
+    box-shadow: 10px 10px 10px 10px #000;
+    display: block;
+    font-size: 20px;
+}
+
+.the_text {
+    display: none;
+    font-size: 13px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.step_description{
+    padding-left: 20px;
+    font-size: 9px;
+}
+
+.step{
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.step_number{
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+@media (max-width:1100px) {
+    .notes{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    .cards{
+      display:block;
+    }
+
+    .notes{
+        margin-top: 20px;
+        width: 100%;
+        height: 300px;
+        display: block;
+        font-size: 19px;
+    }
+
+    .the_text{
+        display: block;
+    }
+}
+
+/*================TOP MOVIES OF THE MONTH=========================*/
+.topmovies {
+    display: flex;
+    margin-top: 10px;
+}
+
+.movie_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-right: 20px;
+}
+  
+.movie_img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+  
+.datamov{
+    border-radius: 5px;
+    margin-top: 10px;
+    /*background-color: #cccfff;*/
+    color:#fff;
+    padding: 10px;
+}
+
+.movie_name{
+    font-style: italic;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.movie_description{
+    font-size: 15px;
+}
+
+.movimg img{
+    opacity: 1;
+    align-items:center ;
+    width: 100%;
+    display: block;
+    border: #000;
+}
+
+.movie_container i{
+    opacity: 0;
+    display: none;
+    color: #fff;
+}
+
+@media (max-width: 1030px){
+
+    .movie_name{
+        font-size: 15px;
+    }
+
+    .movie_year{
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    .movie_description{
+        font-size: 10px;
+    }
+
+    .datamov{
+        padding: 5px;
+    }
+    
+}
+
+@media (max-width:800px) {
+    .topmovies{
+        display:block;
+    }
+
+    .movie_container{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+    .movie_container i{
+        font-size: 50px;
+        opacity: 1;
+        display: block;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .datamov{
+        width: 100%;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .movimg{
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+/*TOP SONGS OF THE MONTH*/
+.suggestsongs{
+    display: flex;
+}
+
+.suggests{
+    width: 100%;
+    background-color: #575cb5;
+    margin-top: 15px;
+    padding: 10px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.songinfo{
+    color: #cccfff;
+    width: 100%;
+    padding-left: 10px;
+    margin: auto;
+}
+
+.songname{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.songartist{
+    font-size: 15px;
+}
+
+
+.suggests i{
+    font-size: 60px;
+    color: #cccfff;
+}
+
+#leftsongs{
+    margin-right: 10px;
+}
+
+.suggestsongs1{
+    width: 33%;
+}
+
+@media (max-width:950px) {
+    .songname{
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .songartist{
+        font-size: 13px;
+    }
+
+    
+}
+
+@media (max-width:850px) {
+    .suggestsongs{
+      display:block;
+    }
+
+    .suggestsongs1{
+        width: 100%;
+    }
+
+
+}
+
+/*THIS FOOTER*/
+footer{
+    position:initial;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000;
+    height: auto;
+    padding-top: 20px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content .foot-head{
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.socials a i{
+    font-size: 1.9rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background: #000;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footer-bottom p a{
+   color:#44bae8;
+   font-size: 16px;
+   text-decoration: none;
+}
+
+.footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+}
+
+
+
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+}
+
+
