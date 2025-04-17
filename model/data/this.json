@@ -1,0 +1,124 @@
+{
+    "top_song_suggestions": [
+      {
+        "title": "Chakk de fatte",
+        "artist": "Selena Gomez",
+        "album": "Calm Down",
+        "genere": "Pop"
+      },
+      {
+        "title": "Starboy",
+        "artist": "The Weekend, Draft Punk",
+        "album": "Starboy",
+        "genere": "Pop"
+      },
+      {
+        "title": "Flowers",
+        "artist": "Miley Cyrus",
+        "album": "Flowers",
+        "genere": "Pop"
+      },
+      {
+        "title": "Perfect",
+        "artist": "Ed Sherran",
+        "album": "Delux",
+        "genere": "Pop"
+      },
+      {
+        "title": "Light Switch",
+        "artist": "Charlie Puth",
+        "album": "CHARLIE",
+        "genere": "Pop"
+      },
+      {
+        "title": "American Teenager",
+        "artist": "Ethel Cain",
+        "album": "Preacher's Daughter",
+        "genere": "Indie"
+      },
+      {
+        "title": "Die For You",
+        "artist": "Joji",
+        "album": "SMITHEREENS",
+        "genere": "Indie"
+      },
+      {
+        "title": "On The Ground",
+        "artist": "Grace Ives",
+        "album": "Janky Star",
+        "genere": "Indie"
+      },
+      {
+        "title": "Hold My Head",
+        "artist": "Kenny Beats",
+        "album": "LOUIE",
+        "genere": "Indie"
+      },
+      {
+        "title": "Change",
+        "artist": "Djo",
+        "album": "DECIDE",
+        "genere": "Indie"
+      },
+      {
+        "title": "Shoong",
+        "artist": "Taeyang, Lisa",
+        "album": "Down To Earth",
+        "genere": "K-Pop"
+      },
+      {
+        "title": "Super",
+        "artist": "SEVENTEEN",
+        "album": "X Mini",
+        "genere": "K-Pop"
+      },
+      {
+        "title": "Haegeum",
+        "artist": "August D",
+        "album": "D-DAY",
+        "genere": "K-Pop"
+      },
+      {
+        "title": "Hold On Tight",
+        "artist": "aespa",
+        "album": "Hold On Tight",
+        "genere": "K-Pop"
+      },
+      {
+        "title": "Kitsch",
+        "artist": "IVE",
+        "album": "Persona",
+        "genere": "K-Pop"
+      },
+      {
+        "title": "295",
+        "artist": "Sidhu Moose Wala",
+        "album": "Moosetape",
+        "genere": "Desi Hip-Hop"
+      },
+      {
+        "title": "Players",
+        "artist": "Badshah, Karan Aujla",
+        "album": "3:00 AM Sessions",
+        "genere": "Desi Hip-Hop"
+      },
+      {
+        "title": "Baazigar",
+        "artist": "DIVINE",
+        "album": "Gunehgar",
+        "genere": "Desi Hip-Hop"
+      },
+      {
+        "title": "52 Bars",
+        "artist": "Karan Aujla",
+        "album": "Four You",
+        "genere": "Desi Hip-Hop"
+      },
+      {
+        "title": "Mirchi",
+        "artist": "Divine",
+        "album": "Punya Paap",
+        "genere": "Desi Hip-Hop"
+      }
+    ]
+}
